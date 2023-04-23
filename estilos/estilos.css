@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.6);
+}
+
+/*.container:hover{
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.6);
+    transform: translateY(-3%);
+}*/
+
+
+.container .left_Side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.boton1 {
+    background-color: #0d58c9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.boton1:hover {
+    background: #5433FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transform: translateY(-3%);
+}
+
+/*Aqui empieza el estilo de contacto*/
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icono {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+
+}
+
+
+.contactInfo ul li span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*color de las clases de educacion*/
+.contactInfo.educacion li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.educacion h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactInfo.educacion h6:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.educacion h6 {
+    color: #fff;
+    font-weight: 300;
+    text-align:justify;
+}
+
+/*color de las clases de aptitudes*/
+.contactInfo.aptitudes li {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/*
+.contactInfo.aptitudes h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.aptitudes h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.aptitudes h4 {
+    color: #fff;
+    font-weight: 300;
+}*/
+
+
+/*Estilo del lado derecho de la pagina*/
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+    
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.parrafo1 {
+    color: #333;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.parrafo2 {
+    color: #333;
+    text-align: justify;
+
+}
+
+
+/*Estilo para la parte de la experience */
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+/*
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+*/
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text  h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    text-align: justify;
+
+}
+
+
+
+/*Estilo para la parte de skills profesional*/
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h7 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    color: rgb(0, 0, 0);
+}
+
+.centrarTexto{
+    text-align: center;
+}
+
+/*Estos son los estilos para la parte de intereses*/
+
+/*color de las clases de*/
+.interest ul li {
+   list-style: none;
+   color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+    cursor: pointer;
+ }
+
+ .enlace{
+    color: #000000;
+    text-decoration: none;
+ }
+
+.interest ul li .fa-solid {
+   color: #03a9f4;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    
+ }
+
+
+/*AQUI EMPIEZA EL ESTILO DE LAS LINEAS*/
+
+.sepáracionLinea {
+    width:100%;
+    background-color: #878d8f;
+    size:3px;
+    border: 1px solid  #aab0b3;
+    position: relative;
+    top: -22px;
+}
+
+
+
+/*aqui ya empieza el estilo para hacerlo responsive */
+
+@media (max-width:1000px) {
+
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year_company {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
